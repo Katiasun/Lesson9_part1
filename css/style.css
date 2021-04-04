@@ -8,6 +8,7 @@ body {
 }
 
 .content {
+  font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   margin-top: 117px;
   margin-bottom: 117px;
@@ -30,9 +31,7 @@ h1 {
   width: 1042px;
   height: 96px;
   margin: 120px 143px 5px 216px;
-}
-.first_par p {
-  font-family: "Lato";
+
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -41,7 +40,7 @@ h1 {
   color: rgba(23, 23, 23, 0.7);
 }
 
-.first_par::first-letter p {
+p :first-of-type::first-letter {
   font-size: 110px;
   line-height: 110px;
   font-weight: normal;
@@ -49,27 +48,25 @@ h1 {
   color: #171717;
   width: 69px;
   height: 110px;
+  float: left;
 }
-.secont_par {
+p {
   width: 1141px;
-  height: 320px;
   margin-left: 129px;
   line-height: 32px;
   color: rgba(23, 23, 23, 0.7);
-}
-.second_par p {
-  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   display: flex;
 }
+
 .italic {
-  height: 34px;
+  margin-top: 41px;
   margin-left: 177px;
 }
 blockquote {
-  font-family: "Lato";
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 28px;
@@ -92,8 +89,11 @@ button {
   width: 264px;
   height: 68px;
 }
+button:hover {
+  background-color: #eaa258;
+}
 button span {
-  font-family: "Lato";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -102,4 +102,7 @@ button span {
   text-transform: uppercase;
   color: #eaa258;
   padding: 23px 75px;
+}
+span:hover {
+  color: beige;
 }
