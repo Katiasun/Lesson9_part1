@@ -20,6 +20,8 @@ body {
 }
 
 h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
   font-size: 42px;
   line-height: 56px;
   color: #171717;
@@ -52,7 +54,6 @@ p {
 
 .italic {
   margin-top: 41px;
-  margin-left: 117px;
 }
 blockquote {
   font-family: "Montserrat", sans-serif;
@@ -61,14 +62,19 @@ blockquote {
   font-size: 28px;
   line-height: 34px;
 
+  position: relative;
+  padding-left: 30px;
+
   color: rgba(23, 23, 23, 0.7);
 }
 blockquote::before {
   content: "“";
   font-size: 65px;
+  position: absolute;
+  top: 3px;
+  left: -10px;
 }
 .nacisk {
-  margin-left: 129px;
   margin-top: 33px;
 }
 button {
@@ -77,21 +83,17 @@ button {
   box-sizing: border-box;
   width: 264px;
   height: 68px;
-  margin-top: 40px;
-}
-button:hover {
-  background-color: #eaa258;
-}
-button span {
-  font-family: "Montserrat", sans-serif;
+  margin-top: 25px;
+
+  cursor: pointer;
 
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #eaa258;
-  padding: 23px 75px;
 }
-span:hover {
+button:hover {
+  background-color: #eaa258;
   color: beige;
 }
